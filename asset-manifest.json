@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/RPI-CogSci/static/css/main.073c9b0a.css",
-    "main.js": "/RPI-CogSci/static/js/main.68f5b1b9.js",
-    "static/js/787.28cb0dcd.chunk.js": "/RPI-CogSci/static/js/787.28cb0dcd.chunk.js",
-    "static/media/logo.svg": "/RPI-CogSci/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/RPI-CogSci/static/css/main.e6c13ad2.css",
+    "main.js": "/RPI-CogSci/static/js/main.e8c097df.js",
+    "static/js/787.585faf1f.chunk.js": "/RPI-CogSci/static/js/787.585faf1f.chunk.js",
     "index.html": "/RPI-CogSci/index.html",
-    "main.073c9b0a.css.map": "/RPI-CogSci/static/css/main.073c9b0a.css.map",
-    "main.68f5b1b9.js.map": "/RPI-CogSci/static/js/main.68f5b1b9.js.map",
-    "787.28cb0dcd.chunk.js.map": "/RPI-CogSci/static/js/787.28cb0dcd.chunk.js.map"
+    "main.e6c13ad2.css.map": "/RPI-CogSci/static/css/main.e6c13ad2.css.map",
+    "main.e8c097df.js.map": "/RPI-CogSci/static/js/main.e8c097df.js.map",
+    "787.585faf1f.chunk.js.map": "/RPI-CogSci/static/js/787.585faf1f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.68f5b1b9.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.e8c097df.js"
   ]
 }
