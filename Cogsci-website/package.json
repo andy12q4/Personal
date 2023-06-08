@@ -1,7 +1,7 @@
 {
   "name": "Cogsci-website",
   "version": "0.1.0",
-  "homepage": "https://andy12q4.github.io/RPI-CogSci",
+  "homepage": "https://andy12q4.github.io/Personal",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
