@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/RPI-CogSci/static/css/main.e6c13ad2.css",
-    "main.js": "/RPI-CogSci/static/js/main.e8c097df.js",
-    "static/js/787.585faf1f.chunk.js": "/RPI-CogSci/static/js/787.585faf1f.chunk.js",
-    "index.html": "/RPI-CogSci/index.html",
-    "main.e6c13ad2.css.map": "/RPI-CogSci/static/css/main.e6c13ad2.css.map",
-    "main.e8c097df.js.map": "/RPI-CogSci/static/js/main.e8c097df.js.map",
-    "787.585faf1f.chunk.js.map": "/RPI-CogSci/static/js/787.585faf1f.chunk.js.map"
+    "main.css": "/Personal/static/css/main.e6c13ad2.css",
+    "main.js": "/Personal/static/js/main.559417ff.js",
+    "static/js/787.585faf1f.chunk.js": "/Personal/static/js/787.585faf1f.chunk.js",
+    "index.html": "/Personal/index.html",
+    "main.e6c13ad2.css.map": "/Personal/static/css/main.e6c13ad2.css.map",
+    "main.559417ff.js.map": "/Personal/static/js/main.559417ff.js.map",
+    "787.585faf1f.chunk.js.map": "/Personal/static/js/787.585faf1f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.e8c097df.js"
+    "static/js/main.559417ff.js"
   ]
 }
