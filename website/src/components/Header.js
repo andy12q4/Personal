@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <NavWrapper>
       <NavContainer>
-        <Logo to="/">RPI CogSci</Logo>
+        <Logo to="/">Andy Chen</Logo>
         <NavMenu>
           <NavItem>
             <NavLinkStyled to="/" exact activeClassName="active">

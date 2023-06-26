@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Homepage from './components/Homepage';
 import ProjectsPage from './components/ProjectsPage';
 import Footer from './components/Footer';
-import AboutUs from './components/AboutUs';
+import AboutUs from './components/AboutPage';
 
 const AppContainer = styled.div`
   min-height: 100vh;
