@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Homepage from './components/Homepage';
 import ProjectsPage from './components/ProjectsPage';
 import Footer from './components/Footer';
-import AboutUs from './components/AboutPage';
+import AboutPage from './components/AboutPage';
 
 const AppContainer = styled.div`
   min-height: 100vh;
@@ -29,7 +29,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/about" element={<AboutUs />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
       </MainContent>
       <Footer />
