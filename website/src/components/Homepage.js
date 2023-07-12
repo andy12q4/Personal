@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import ihp from '../images/IHP.PNG';
+import overlord from '../images/overlord.PNG';
 
 const Container = styled.div`
   display: flex;
@@ -15,7 +17,6 @@ const Container = styled.div`
   flex-grow: 1;
   min-height: 0;
   overflow: auto;
-  
 `;
 
 const ProjectContainer = styled.div`
@@ -36,10 +37,19 @@ const ProjectCard = styled.div`
   width: 300px;
 `;
 
-const Image = styled.img`
+const ImageContainer = styled.div`
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  position: relative;
+  padding-bottom: 75%; // This gives us a 4:3 aspect ratio
+`;
+
+const Image = styled.img`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   border-radius: 10px;
 `;
 
@@ -57,12 +67,12 @@ class Homepage extends React.Component {
     projects: [
       {
         title: 'Project 1',
-        imageUrl: 'https://example.com/project1-image.jpg',
+        imageUrl: ihp,
         description: 'Description 1',
       },
       {
         title: 'Project 2',
-        imageUrl: 'https://example.com/project2-image.jpg',
+        imageUrl: overlord,
         description: 'Description 2',
       },
       {
@@ -76,11 +86,13 @@ class Homepage extends React.Component {
   render() {
     return (
       <Container>
-        <h1>Welcome to Our Student Projects Showcase</h1>
+        <h1>View my Projects</h1>
         <ProjectContainer>
           {this.state.projects.map((project, index) => (
             <ProjectCard key={index}>
-              <Image src={project.imageUrl} alt={project.title} />
+              <ImageContainer>
+                <Image src={project.imageUrl} alt={project.title} />
+              </ImageContainer>
               <Title>{project.title}</Title>
               <Description>{project.description}</Description>
             </ProjectCard>

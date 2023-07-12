@@ -15,25 +15,25 @@ const AppContainer = styled.div`
 
 const MainContent = styled.main`
   flex-grow: 1;
-  padding: 20px;
   overflow: auto;
   min-height: 0;
+  width: 100%;
 `;
 
 const App = () => {
   return (
     <Router>
-     <AppContainer>
-      <Header />
-      <MainContent>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/about" element={<AboutPage />} />
-      </Routes>
-      </MainContent>
-      <Footer />
-     </AppContainer>
+      <AppContainer>
+        <Header />
+        <MainContent>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+        </MainContent>
+        <Footer />
+      </AppContainer>
     </Router>
   );
 };
