@@ -50,15 +50,16 @@ const Header = () => {
             </NavLinkStyled>
           </NavItem>
           <NavItem>
-            <NavLinkStyled to="/about" activeClassName="active">
-              About
-            </NavLinkStyled>
-          </NavItem>
-          <NavItem>
             <NavLinkStyled to="/projects" activeClassName="active">
               Projects
             </NavLinkStyled>
           </NavItem>
+          <NavItem>
+            <NavLinkStyled to="/about" activeClassName="active">
+              About
+            </NavLinkStyled>
+          </NavItem>
+          
         </NavMenu>
       </NavContainer>
     </NavWrapper>

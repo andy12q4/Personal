@@ -9,7 +9,6 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin: 50px 0;
   align-items: center;
   background-color: #f2f2f2;
   padding: 50px;
