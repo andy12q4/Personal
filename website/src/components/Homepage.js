@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ihp from '../images/IHP.PNG';
 import overlord from '../images/overlord.PNG';
+import h2w from '../images/h2w.PNG';
 
 const Container = styled.div`
   display: flex;
@@ -76,7 +77,7 @@ class Homepage extends React.Component {
       },
       {
         title: 'Project 3',
-        imageUrl: 'https://example.com/project3-image.jpg',
+        imageUrl: h2w,
         description: 'Description 3',
       },
     ],
