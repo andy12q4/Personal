@@ -19,6 +19,10 @@ const Container = styled.div`
   overflow: auto;
 `;
 
+const FullSizeImage = styled.img`
+  width: 100%;
+`;
+
 const ProjectContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -40,7 +44,7 @@ const ProjectCard = styled.div`
 const ImageContainer = styled.div`
   width: 100%;
   position: relative;
-  padding-bottom: 75%; // This gives us a 4:3 aspect ratio
+  padding-bottom: 75%;
 `;
 
 const Image = styled.img`
@@ -62,7 +66,7 @@ const Description = styled.p`
   color: #666;
 `;
 
-class Homepage extends React.Component {
+class ProjectsPage extends React.Component {
   state = {
     projects: [
       {
@@ -86,6 +90,7 @@ class Homepage extends React.Component {
   render() {
     return (
       <Container>
+        <FullSizeImage src="https://source.unsplash.com/random?portrait" alt="Full Size" />
         <h1>View my Projects</h1>
         <ProjectContainer>
           {this.state.projects.map((project, index) => (
@@ -103,4 +108,4 @@ class Homepage extends React.Component {
   }
 }
 
-export default Homepage;
+export default ProjectsPage;
