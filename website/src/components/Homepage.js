@@ -3,31 +3,46 @@ import styled from 'styled-components';
 import ihp from '../images/IHP.PNG';
 import overlord from '../images/overlord.PNG';
 import h2w from '../images/h2w.PNG';
+import background from '../images/background.jpg';
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
   align-items: center;
-  background-color: #f2f2f2;
-  padding: 50px;
+  background-image: url(${background});
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
   font-family: Arial, sans-serif;
   flex-grow: 1;
-  min-height: 0;
-  overflow: auto;
+  min-height: 100vh;
+  padding: 50px;
 `;
 
-const FullSizeImage = styled.img`
-  width: 100%;
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  padding: 20px;
+`;
+
+const TextSection = styled.div`
+  text-align: left;
+  max-width: 400px;
+  margin-top: 250px;
+  margin-bottom: 1000px;
+  margin-right: 1100px;
+  color: 'gray';
 `;
 
 const ProjectContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   margin-top: 30px;
+  margin-bottom: 300px;
 `;
 
 const ProjectCard = styled.div`
@@ -90,19 +105,24 @@ class ProjectsPage extends React.Component {
   render() {
     return (
       <Container>
-        <FullSizeImage src="https://source.unsplash.com/random?portrait" alt="Full Size" />
-        <h1>View my Projects</h1>
-        <ProjectContainer>
-          {this.state.projects.map((project, index) => (
-            <ProjectCard key={index}>
-              <ImageContainer>
-                <Image src={project.imageUrl} alt={project.title} />
-              </ImageContainer>
-              <Title>{project.title}</Title>
-              <Description>{project.description}</Description>
-            </ProjectCard>
-          ))}
-        </ProjectContainer>
+        <Content>
+          <TextSection>
+            <h1>Welcome to my Website</h1>
+            <p>My name is Andy Chen I am a student at RPI which a dual major in Computer Science and ITWS</p>
+          </TextSection>
+          <h1>View my Projects</h1>
+          <ProjectContainer>
+            {this.state.projects.map((project, index) => (
+              <ProjectCard key={index}>
+                <ImageContainer>
+                  <Image src={project.imageUrl} alt={project.title} />
+                </ImageContainer>
+                <Title>{project.title}</Title>
+                <Description>{project.description}</Description>
+              </ProjectCard>
+            ))}
+          </ProjectContainer>
+        </Content>
       </Container>
     );
   }

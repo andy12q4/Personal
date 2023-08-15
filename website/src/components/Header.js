@@ -3,10 +3,14 @@ import { Link, NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavWrapper = styled.nav`
-  background-color: #333;
-  color: #fff;
+  position: fixed; // or use absolute if you want it to scroll with the content
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent; // No background color
+  color: #333;
+  z-index: 1000;
 `;
-
 const NavContainer = styled.div`
   display: flex;
   justify-content: space-between;
@@ -16,7 +20,7 @@ const NavContainer = styled.div`
 
 const Logo = styled(Link)`
   font-size: 1.5rem;
-  color: #fff;
+  color: #rbg;
   text-decoration: none;
 `;
 
@@ -42,7 +46,7 @@ const Header = () => {
   return (
     <NavWrapper>
       <NavContainer>
-        <Logo to="/">Andy Chen</Logo>
+        <Logo to="/">Ａｎｄｙ Ｃｈｅｎ</Logo>
         <NavMenu>
           <NavItem>
             <NavLinkStyled to="/" exact activeClassName="active">
