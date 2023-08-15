@@ -1,28 +1,33 @@
-import React from "react";
-import background from '../images/background.jpg';
+import styled from 'styled-components';
+
+const FooterWrapper = styled.footer`
+position: fixed; // or use absolute if you want it to scroll with the content
+bottom: 0;
+left: 0;
+right: 0;
+background: transparent; // No background color
+color: white;
+z-index: 1000;
+`;
+
+const FooterList = styled.ul`
+  list-style: none;
+  display: flex;
+  & > li:not(:last-child) {
+    margin-right: 15px;
+  }
+`;
 
 const Footer = () => {
-    const footerStyle = {
-        backgroundColor: "red",
-        backgroundImage: `url(${background})`,
-        backgroundSize: 'cover',
-        color: "white",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "10px"
-    };
-
     return (
-        <footer style={footerStyle}>
-            <p>Andy Chen</p>
+        <FooterWrapper>
+         
             <nav>
-                <ul style={{listStyle: "none", display: "flex"}}>
-                    <li style={{marginRight: "15px"}}>Privacy Policy</li>
-                    <li>Terms of Service</li>
-                </ul>
+                <FooterList>
+                  
+                </FooterList>
             </nav>
-        </footer>
+        </FooterWrapper>
     );
 };
 

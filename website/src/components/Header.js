@@ -19,7 +19,7 @@ const NavContainer = styled.div`
 `;
 
 const Logo = styled(Link)`
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #rbg;
   text-decoration: none;
 `;
@@ -30,7 +30,8 @@ const NavMenu = styled.ul`
 `;
 
 const NavItem = styled.li`
-  margin-right: 20px;
+  margin-right: 50px;
+  font-size: 1.2rem;
 `;
 
 const NavLinkStyled = styled(NavLink)`

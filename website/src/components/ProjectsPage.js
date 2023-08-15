@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ihp from '../images/IHP.PNG';
 import overlord from '../images/overlord.PNG';
 import h2w from '../images/h2w.PNG';
+import background from '../images/background.jpg';
 
 const Container = styled.div`
   display: flex;
@@ -11,12 +12,15 @@ const Container = styled.div`
   justify-content: center;
   gap: 20px;
   align-items: center;
-  background-color: #f2f2f2;
+  background-image: url(${background}); // Add this
+  background-size: cover;               // And this
+  background-attachment: fixed;         // And this
   padding: 50px;
   font-family: Arial, sans-serif;
   flex-grow: 1;
-  min-height: 0;
+  min-height: 100vh;                    // Adjust this to cover full viewport height
   overflow: auto;
+  color: white;                         // Adjust text color for better contrast
 `;
 
 const ProjectContainer = styled.div`
